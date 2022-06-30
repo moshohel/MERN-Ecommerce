@@ -1,0 +1,32 @@
+{
+  "name": "mern-ecommer",
+  "version": "1.0.0",
+  "description": "MERN ecommerce",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "history": "^5.3.0",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.8.1",
+    "react-is": "^16.13.1",
+    "react-router": "^6.3.0",
+    "react-router-bootstrap": "^0.26.1",
+    "react-router-dom": "^6.3.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshohel/MERN-Ecommerce.git"
+  },
+  "author": "Eshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moshohel/MERN-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/moshohel/MERN-Ecommerce#readme"
+}
