@@ -17,7 +17,10 @@
     "regenerator-runtime": "^0.13.9"
   },
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix eshop",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -28,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/moshohel/MERN-Ecommerce/issues"
   },
-  "homepage": "https://github.com/moshohel/MERN-Ecommerce#readme"
+  "homepage": "https://github.com/moshohel/MERN-Ecommerce#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18"
+  }
 }
