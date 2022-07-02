@@ -1,10 +1,25 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
-import products from '../products'
+// import products from '../products'
 import Main from '../components/Main'
+import { useState, useEffect } from 'react'
+import { async } from 'regenerator-runtime'
+import axios from 'axios'
 
 const HomeScreen = () => {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    const fetchProsucts = async () => {
+      const { data } = await axios.get('/api/products')
+
+      setProducts(data)
+    }
+
+    fetchProsucts()
+  }, [])
+
   return (
     <>
       <h1 className="mt-4">Latest Products</h1>
